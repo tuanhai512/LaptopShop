@@ -1,0 +1,11 @@
+﻿@model Management.ViewModel.Categories.UpdateCategoryInput
+@{
+    @using (Html.BeginForm())
+    {
+           @Html.HiddenFor(m => m.ID)
+        <p>@Html.LabelFor(m => m.Name)</p>
+        <p>@Html.EditorFor(m => m.Name)</p>
+        <input type="submit" value="Edit"/>
+    }
+
+}

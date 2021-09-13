@@ -1,0 +1,24 @@
+﻿@model Management.ViewModel.Role.DetailRoleInput
+@{
+    if(Model != null)
+    {
+    <table>
+        <thead>
+            <tr>
+                <th>@Html.LabelFor(m => m.Id)</th>
+                <th>@Html.LabelFor(m => m.Name)</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>@Model.Id</th>
+            <th>@Model.Name</th>
+        </tr>
+    </table>
+    
+    }
+    else
+    {
+        <p>No data</p>
+    }
+}

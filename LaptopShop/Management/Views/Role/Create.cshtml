@@ -1,0 +1,11 @@
+﻿@model Management.ViewModel.Role.CreateRoleInput
+@{
+        @using (Html.BeginForm())
+        {
+            <p>Create</p>
+            <p>@Html.LabelFor(m => m.Name)</p>
+            <p>@Html.EditorFor(m => m.Name)</p>
+            <input type="submit" value="create"/>
+        }
+  
+}

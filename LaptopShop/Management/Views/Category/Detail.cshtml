@@ -1,0 +1,28 @@
+﻿@model Management.ViewModel.Categories.DetailCategoryDTO
+@{
+    if(Model != null)
+    {
+      <tr>
+          <th>
+              @Html.LabelFor(m => m.ID)           
+          </th>
+          <th>
+              @Html.LabelFor(m => m.Name)
+              
+          </th>
+      </tr>
+      <tr>
+          <th>
+              <span>@Model.ID</span>
+          </th>
+          <th>
+              <span>@Model.Name</span>
+          </th>
+      </tr>
+
+    }
+    else
+    {
+        <p>No data</p>
+    }
+}
