@@ -9,7 +9,8 @@ namespace Management.ViewModel.Categories
     {
         public int ID { get; set; }
         public string Name { get; set; }
-
+        
+        
     }
     
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\năm 4\\LaptopShop\\LaptopShop\\Management\\Management.csproj": {}
+    "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\Management.csproj": {}
   },
   "projects": {
-    "H:\\năm 4\\LaptopShop\\LaptopShop\\Management\\Management.csproj": {
+    "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\năm 4\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+        "projectUniqueName": "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
         "projectName": "Management",
-        "projectPath": "H:\\năm 4\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+        "projectPath": "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
         "packagesPath": "C:\\Users\\Tuan Hai\\.nuget\\packages\\",
-        "outputPath": "H:\\năm 4\\LaptopShop\\LaptopShop\\Management\\obj\\",
+        "outputPath": "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.9, )"

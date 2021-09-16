@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Web;
+using System.ComponentModel;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Http;
 
 #nullable disable
 
@@ -21,5 +25,8 @@ namespace Management.Models
         public DateTime? UpdateAt { get; set; }
 
         public virtual Category Category { get; set; }
+
+        [NotMapped]
+        public IFormFile UploadImage { get; set; }
     }
 }

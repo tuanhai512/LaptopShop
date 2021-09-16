@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Management.ViewModel.Role
 {
-    public class DetailRoleInput:RoleDTO
+    public class DetailRoleDTO:RoleDTO
     {
 
     }

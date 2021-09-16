@@ -74,7 +74,7 @@ namespace Management.Controllers
         {
             var query = from r in _context.Roles
                         where r.Id == id
-                        select new DetailRoleInput
+                        select new DetailRoleDTO
                         {
                             Id = r.Id,
                             Name = r.Name
