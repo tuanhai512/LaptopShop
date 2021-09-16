@@ -13,7 +13,7 @@ namespace Management.Controllers
     public class CategoryController : Controller
     {
         private QLWBLTContext _context;
-        public static List<Category> listCategory = new List<Category>();
+        
         public CategoryController( QLWBLTContext context)
         {
             this._context = context;

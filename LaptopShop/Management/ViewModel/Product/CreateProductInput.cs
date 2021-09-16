@@ -1,4 +1,4 @@
-﻿using Management.ViewModel.Categories;
+﻿using Management.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -19,8 +19,6 @@ namespace Management.ViewModel.Product
         public string Description { get; set; }
         public string Image { get; set; }
         public string CategoryName { get; set; }
-
-      
 
         [NotMapped]
         public IFormFile UploadImage { get; set; }

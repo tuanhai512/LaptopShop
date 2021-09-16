@@ -21,6 +21,7 @@ namespace Management.ViewModel.Product
         public string Image { get; set; }
         public string CategoryName { get; set; }
 
+       
         [NotMapped]
         public IFormFile UploadImage { get; set; }
 

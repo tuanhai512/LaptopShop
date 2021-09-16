@@ -1,0 +1,52 @@
+﻿@model Management.ViewModel.Product.DetailProductDTO
+@{
+   
+        if (Model != null)
+        {
+        <tr>
+            <th>
+                @Html.LabelFor(m => m.Id)
+            </th>
+            <th>
+                @Html.LabelFor(m => m.Name)
+            </th>
+            <th>
+                @Html.LabelFor(m => m.CategoryName)
+            </th>
+            <th>
+                @Html.LabelFor(m => m.Price)
+            </th>
+            <th>
+                @Html.LabelFor(m => m.Quantity)
+            </th>
+            <th>
+                @Html.LabelFor(m => m.Image)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <span>@Model.Id</span>
+            </th>
+            <th>
+                <span>@Model.Name</span>
+            </th>
+            <th>
+                <span>@Model.CategoryName</span>
+            </th>
+            <th>
+                <span>@Model.Price</span>
+            </th>
+            <th>
+                <span>@Model.Quantity</span>
+            </th>
+            <th>
+                <span>@Model.Image</span>
+            </th>
+        </tr>
+
+        }
+        else
+        {
+            <p>No data</p>
+        }
+    }

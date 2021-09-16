@@ -1,4 +1,4 @@
-﻿@model Management.ViewModel.Product.CreateProductInput
+﻿@model Management.ViewModel.Product.UpdateProductInput
 @{
     @using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
@@ -10,12 +10,12 @@
         <p>@Html.EditorFor(m => m.Quantity)</p>
         <p>@Html.LabelFor(m => m.Description)</p>
         <p>@Html.EditorFor(m => m.Description)</p>
-        
-            <div class="form-group">
+
+        <div class="form-group">
             <label>@Html.LabelFor(m => m.CategoryName)</label>
             <p>
-                @Html.DropDownList("CategoryName", (IEnumerable<SelectListItem>)ViewBag.Categories, new { @class="form -control"})
-            </p> 
+                @Html.DropDownList("CategoryName", (IEnumerable<SelectListItem>)ViewBag.Categories, new { @class = "form -control" })
+            </p>
         </div>
         <p>@Html.HiddenFor(m => m.CategoryId)</p>
         <div class="form-group">

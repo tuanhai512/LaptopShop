@@ -7,10 +7,12 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
+                    <th>CategoryName</th>
                     <th>Price</th>
                     <th>Quantity</th>
-                    <th>Description</th>
                     <th>Image</th>
+                    <th>Description</th>
+
                 </tr>
             </thead>
             @foreach(var i in Model)
@@ -18,10 +20,14 @@
         <tr>
             <th>@i.Id</th>
             <th>@i.Name</th>
+            <th>@i.CategoryName</th>
             <th>@i.Price</th>
             <th>@i.Quantity</th>
-            <th>@i.Description</th>
             <th>@i.Image</th>
+            <th>@i.Description</th>
+            <th><a href="@Url.ActionLink("Edit","Product",new { id = i.Id })">Edit</a></th>
+            <th><a href="@Url.ActionLink("Delete","Product",new { id = i.Id })">Delete</a></th>
+            <th><a href="@Url.ActionLink("Detail","Product",new { id = i.Id })">Detail</a></th>
         </tr>
              }
         </table>
