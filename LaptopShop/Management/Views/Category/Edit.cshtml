@@ -2,10 +2,11 @@
 @{
     @using (Html.BeginForm())
     {
-           @Html.HiddenFor(m => m.ID)
+        @Html.HiddenFor(m => m.ID)
         <p>@Html.LabelFor(m => m.Name)</p>
         <p>@Html.EditorFor(m => m.Name)</p>
-        <input type="submit" value="Edit"/>
+        <input type="submit" value="Edit" />
+        <span class="btn btn-link">@Html.ActionLink("Back to List", "Index") </span>
     }
 
 }

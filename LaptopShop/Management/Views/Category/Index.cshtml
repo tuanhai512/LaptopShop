@@ -1,29 +1,54 @@
 ﻿@model IEnumerable<Management.ViewModel.Categories.CategoryDTO>
 @{
-    <p>Category list</p>
-    <a href="@Url.ActionLink("Create","Category")">Tao moi</a>
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6 text-danger text-uppercase">
+                    <strong>List Category</strong>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="@Url.Action("Create","Category")" class="btn btn-sm btn-success">Create category</a>
+                </div>
+            </div>
+        </div>
+    </div>
     if (Model.Count() > 0)
     {
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-            </tr>
-        </thead>
-        @foreach (var item in Model)
-        {
-    <tr>
-        <th>@item.ID</th>
-        <th>@item.Name</th>
-        <th><a href="@Url.ActionLink("Edit","Category",new { id = item.ID })">Edit</a></th>
-        <th><a href="@Url.ActionLink("Delete","Category",new { id = item.ID })">Delete</a></th>
-        <th><a href="@Url.ActionLink("Detail","Category",new { id = item.ID })">Detail</a></th>
-    </tr>
+        @Html.AntiForgeryToken()
 
-        }
-    </table>
-       
+        <div class="card-block p-3">
+            <table class="table table-bordered table-hover table-striped">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>                
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+
+                <td>
+                <a href="@Url.ActionLink("Edit","Category",new { id = item.ID })" class="btn btn-sm btn-warning" >Edit</a>
+                <a href="@Url.ActionLink("Delete","Category",new { id = item.ID })" class="btn btn-sm btn-danger">Delete</a>
+                <a href="@Url.ActionLink("Detail","Category",new { id = item.ID })" class="btn btn-sm btn-info">Detail</a>
+                </td>
+            </tr>
+                }
+
+            </table>
+        </div>
+
     }
     else
     {

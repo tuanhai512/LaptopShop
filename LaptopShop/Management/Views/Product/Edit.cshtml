@@ -19,10 +19,14 @@
         </div>
         <p>@Html.HiddenFor(m => m.CategoryId)</p>
         <div class="form-group">
-            <label>@Html.LabelFor(m => m.Image)</label>
-            <input type="file" id="file" name="UploadImage" style="width:100%;" />
+            <label>@Html.LabelFor(m => m.Image)</label>          
+            <p> <img src="@Url.Content(Model.Image)" height="250" width="250" alt="" /> </p> 
+           <input type="file" id="file" name="UploadImage" style="width:100%;" />
         </div>
-
-        <input type="submit" value="create" />
+        <div>
+            <input type="submit" value="create" />
+            <span class="btn btn-link">@Html.ActionLink("Back to List", "Index") </span>
+        </div>
+        
     }
 }

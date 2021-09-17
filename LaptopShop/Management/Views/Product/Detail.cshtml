@@ -3,46 +3,45 @@
    
         if (Model != null)
         {
-        <tr>
-            <th>
-                @Html.LabelFor(m => m.Id)
-            </th>
-            <th>
-                @Html.LabelFor(m => m.Name)
-            </th>
-            <th>
-                @Html.LabelFor(m => m.CategoryName)
-            </th>
-            <th>
-                @Html.LabelFor(m => m.Price)
-            </th>
-            <th>
-                @Html.LabelFor(m => m.Quantity)
-            </th>
-            <th>
-                @Html.LabelFor(m => m.Image)
-            </th>
-        </tr>
-        <tr>
-            <th>
-                <span>@Model.Id</span>
-            </th>
-            <th>
-                <span>@Model.Name</span>
-            </th>
-            <th>
-                <span>@Model.CategoryName</span>
-            </th>
-            <th>
-                <span>@Model.Price</span>
-            </th>
-            <th>
-                <span>@Model.Quantity</span>
-            </th>
-            <th>
-                <span>@Model.Image</span>
-            </th>
-        </tr>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd>
+            <img src="@Url.Content(Model.Image)" height="250" width="250" alt=""/>
+        </dd>
+        <span class="btn btn-link">@Html.ActionLink("Back to List", "Index") </span>
+    </dl>
 
         }
         else

@@ -2,23 +2,21 @@
 @{
     if(Model != null)
     {
-      <tr>
-          <th>
-              @Html.LabelFor(m => m.ID)           
-          </th>
-          <th>
-              @Html.LabelFor(m => m.Name)
-              
-          </th>
-      </tr>
-      <tr>
-          <th>
-              <span>@Model.ID</span>
-          </th>
-          <th>
-              <span>@Model.Name</span>
-          </th>
-      </tr>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(m => m.ID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(m => m.ID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(m => m.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(m => m.Name)
+        </dd>
+        <span class="btn btn-link">@Html.ActionLink("Back to List", "Index") </span>
+    </dl>
 
     }
     else

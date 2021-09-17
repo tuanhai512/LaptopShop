@@ -1,9 +1,10 @@
 ﻿@model Management.ViewModel.Categories.CreateCategoryInput
 @{
-    @using(Html.BeginForm())
-            {
-                <p>@Html.LabelFor(m => m.Name)</p>
-                <p>@Html.EditorFor(m => m.Name)</p>
-                <input type="submit" value="create"/>
-            }
+    @using (Html.BeginForm())
+    {
+        <p>@Html.LabelFor(m => m.Name)</p>
+        <p>@Html.EditorFor(m => m.Name)</p>
+        <input type="submit" value="create" />
+        <span class="btn btn-link">@Html.ActionLink("Back to List", "Index") </span>
+    }
 }

@@ -2,27 +2,37 @@
 @{
     @using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
-        <p>@Html.LabelFor(m => m.Name)</p>
-        <p>@Html.EditorFor(m => m.Name)</p>
-        <p>@Html.LabelFor(m => m.Price)</p>
-        <p>@Html.EditorFor(m => m.Price)</p>
-        <p>@Html.LabelFor(m => m.Quantity)</p>
-        <p>@Html.EditorFor(m => m.Quantity)</p>
-        <p>@Html.LabelFor(m => m.Description)</p>
-        <p>@Html.EditorFor(m => m.Description)</p>
-        
-            <div class="form-group">
-            <label>@Html.LabelFor(m => m.CategoryName)</label>
-            <p>
-                @Html.DropDownList("CategoryName", (IEnumerable<SelectListItem>)ViewBag.Categories, new { @class="form -control"})
-            </p> 
-        </div>
-        <p>@Html.HiddenFor(m => m.CategoryId)</p>
-        <div class="form-group">
-            <label>@Html.LabelFor(m => m.Image)</label>
-            <input type="file" id="file" name="UploadImage" style="width:100%;" />
-        </div>
-
-        <input type="submit" value="create" />
+<div class="form">
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.EditorFor(m => m.Name)
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Price)
+        @Html.EditorFor(m => m.Price)
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Quantity)
+        @Html.EditorFor(m => m.Quantity)
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Description)
+        @Html.EditorFor(m => m.Description)
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.CategoryName)
+        @Html.DropDownList("CategoryName", (IEnumerable<SelectListItem>)ViewBag.Categories, new { @class = "form -control" })
+    </div>
+    <p>@Html.HiddenFor(m => m.CategoryId)</p>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Image)
+        <input type="file" id="file" name="UploadImage" style="width:100%" />
+    </div>
+    <div>
+        <input type="submit" value="Create" />
+        <span class="btn btn-link">@Html.ActionLink("Back to List", "Index") </span>
+    </div>  
+</div>       
+       
     }
 }

@@ -250,3 +250,4 @@ H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\bin\Debug\net5.0\r
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Product\Detail.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Management.csprojAssemblyReference.cache
