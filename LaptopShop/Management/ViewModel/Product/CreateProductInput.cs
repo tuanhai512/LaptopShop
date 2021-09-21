@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Management.ViewModel.Product
 {
-    public class CreateProductInput 
+    public class CreateProductInput
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -18,7 +18,6 @@ namespace Management.ViewModel.Product
         public double? Price { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
-        public string CategoryName { get; set; }
 
         [NotMapped]
         public IFormFile UploadImage { get; set; }

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Web;
-using System.ComponentModel;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Http;
 
 #nullable disable
 
@@ -18,15 +14,11 @@ namespace Management.Models
         public double? Price { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
-        public string CategoryName { get; set; }
         public int? CreateBy { get; set; }
         public DateTime? CreateAt { get; set; }
         public int? UpdateBy { get; set; }
         public DateTime? UpdateAt { get; set; }
 
         public virtual Category Category { get; set; }
-
-        [NotMapped]
-        public IFormFile UploadImage { get; set; }
     }
 }

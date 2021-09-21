@@ -19,12 +19,12 @@ namespace Management.Controllers
     {
         private QLWBLTContext _context;
         private IWebHostEnvironment _webHostEnvironment;
-        
-        public ProductController( QLWBLTContext context , IWebHostEnvironment webHostEnvironment )
+
+        public ProductController(QLWBLTContext context, IWebHostEnvironment webHostEnvironment)
         {
             this._context = context;
             this._webHostEnvironment = webHostEnvironment;
-           
+
         }
         public IActionResult Index()
         {
@@ -35,17 +35,25 @@ namespace Management.Controllers
                             Name = c.Name,
                             Price = c.Price,
                             Description = c.Description,
-                            CategoryName = c.CategoryName,
+                            CategoryName = c.Category.Name,
+                            CategoryId = c.CategoryId,
                             Quantity = c.Quantity,
                             Image = c.Image
                         };
             return View(query.ToList());
         }
+     
         public IActionResult Create()
         {
-            var categorylist = _context.Categories.ToList();
-
-            ViewBag.Categories = new SelectList(categorylist, "Name", "Name");         
+            var categorylist = _context.Categories.ToList().Select(
+                 x => new SelectListItem
+                 {
+                     Text = x.Name,
+                     Value = Convert.ToString(x.Id)
+                 }
+                );
+          
+            ViewBag.Categories = categorylist;
             return View();
         }
         [HttpPost]
@@ -54,9 +62,7 @@ namespace Management.Controllers
             var entity = new Product();
             if (model != null)
             {
-                var categorylist = _context.Categories.ToList();
-                ViewBag.Categories = new SelectList(categorylist, "Name", "Name");
-             
+            
                 entity = new Product();
 
                 if (model.UploadImage != null)
@@ -66,16 +72,14 @@ namespace Management.Controllers
                     filename = filename + extent;
                     model.Image = "/Images/" + filename;
                     model.UploadImage.CopyTo(new FileStream(Path.Combine("wwwroot/Images", filename), FileMode.Create));
-
                 }
-                
                 entity.Id = model.Id;
                 entity.Name = model.Name;
                 entity.Price = model.Price;
                 entity.Quantity = model.Quantity;
                 entity.Description = model.Description;
-                entity.CategoryName = model.CategoryName;
                 entity.CategoryId = model.CategoryId;
+                
                 entity.Image = model.Image;
                 _context.Add(entity);
                 _context.SaveChanges();
@@ -99,7 +103,7 @@ namespace Management.Controllers
             model.Price = entity.Price;
             model.Quantity = entity.Quantity;
             model.Description = entity.Description;
-            model.CategoryName = entity.CategoryName;
+         
             model.CategoryId = entity.CategoryId;
             model.Image = entity.Image;
             return View(model);
@@ -128,7 +132,7 @@ namespace Management.Controllers
             entity.Price = model.Price;
             entity.Quantity = model.Quantity;
             entity.Description = model.Description;
-            entity.CategoryName = model.CategoryName;
+         
             entity.CategoryId = model.CategoryId;
             entity.Image = model.Image;
             this._context.Entry(entity).State = (Microsoft.EntityFrameworkCore.EntityState)EntityState.Modified;
@@ -154,7 +158,7 @@ namespace Management.Controllers
                             Quantity = c.Quantity,
                             Description = c.Description,
                             Image = c.Image,
-                            CategoryName = c.CategoryName
+                            CategoryId = c.CategoryId
                         };
 
             return View(query.First());
