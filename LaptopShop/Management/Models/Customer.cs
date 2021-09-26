@@ -5,15 +5,10 @@ using System.Collections.Generic;
 
 namespace Management.Models
 {
-    public partial class User
+    public partial class Customer
     {
-        public User()
-        {
-            Customers = new HashSet<Customer>();
-            staff = new HashSet<Staff>();
-        }
-
         public int Id { get; set; }
+        public int? UserId { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public string Address { get; set; }
@@ -22,7 +17,6 @@ namespace Management.Models
         public string Email { get; set; }
         public string Avatar { get; set; }
 
-        public virtual ICollection<Customer> Customers { get; set; }
-        public virtual ICollection<Staff> staff { get; set; }
+        public virtual User User { get; set; }
     }
 }

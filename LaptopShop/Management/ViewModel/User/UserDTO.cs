@@ -1,28 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Management.Models
+namespace Management.ViewModel.User
 {
-    public partial class User
+    public class UserDTO
     {
-        public User()
-        {
-            Customers = new HashSet<Customer>();
-            staff = new HashSet<Staff>();
-        }
-
         public int Id { get; set; }
         public string Name { get; set; }
+        [Required(ErrorMessage = "Mật khẩu không được để trống")]
         public string Password { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
         public DateTime? BirthDay { get; set; }
+        [Required(ErrorMessage = "Email không được để trống")]
         public string Email { get; set; }
         public string Avatar { get; set; }
-
-        public virtual ICollection<Customer> Customers { get; set; }
-        public virtual ICollection<Staff> staff { get; set; }
     }
 }
