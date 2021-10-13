@@ -18,6 +18,6 @@ namespace Management.Controllers
         {
             return View();
         }
-
+        
     }
 }

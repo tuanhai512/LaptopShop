@@ -252,6 +252,14 @@ H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\R
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Product\Detail.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Login\Register.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
-H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Management.csprojAssemblyReference.cache
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Staff\Create.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Staff\Index.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Customer\Create.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Customer\Index.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Order\Index.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\ProductOrder\Index.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Order\Complete.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Order\Cancel.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Order\Confirm.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Management.csprojAssemblyReference.cache
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Customer\Hide.cshtml.g.cs

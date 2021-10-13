@@ -123,7 +123,7 @@ namespace Management.Controllers
             model.Image = entity.Image;
             return View(model);
         }
-        [HttpPost]
+        [HttpPut]
         public IActionResult Edit(UpdateProductInput model )
         {
             var entity = new Product();
@@ -154,6 +154,7 @@ namespace Management.Controllers
             this._context.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
             var entity = this._context.Products.Find(id);

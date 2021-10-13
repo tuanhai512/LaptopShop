@@ -18,5 +18,7 @@ namespace Management.ViewModel.User
         [Required(ErrorMessage = "Email không được để trống")]
         public string Email { get; set; }
         public string Avatar { get; set; }
+
+        public int? Status { get; set; }
     }
 }
