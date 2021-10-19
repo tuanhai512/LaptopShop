@@ -15,6 +15,7 @@ namespace Management.Models
 
         public int Id { get; set; }
         public int? Total { get; set; }
+        public int? Status { get; set; }
 
         public virtual ICollection<Invoice> Invoices { get; set; }
         public virtual ICollection<ProductOrder> ProductOrders { get; set; }

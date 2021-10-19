@@ -16,6 +16,7 @@ namespace Management.Models
         public DateTime? BirthDay { get; set; }
         public string Email { get; set; }
         public string Avatar { get; set; }
+        public int? Status { get; set; }
 
         public virtual User User { get; set; }
     }

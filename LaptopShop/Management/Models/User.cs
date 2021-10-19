@@ -10,7 +10,7 @@ namespace Management.Models
         public User()
         {
             Customers = new HashSet<Customer>();
-            staff = new HashSet<Staff>();
+            Staff = new HashSet<Staff>();
         }
 
         public int Id { get; set; }
@@ -21,8 +21,9 @@ namespace Management.Models
         public DateTime? BirthDay { get; set; }
         public string Email { get; set; }
         public string Avatar { get; set; }
+        public int? Status { get; set; }
 
         public virtual ICollection<Customer> Customers { get; set; }
-        public virtual ICollection<Staff> staff { get; set; }
+        public virtual ICollection<Staff> Staff { get; set; }
     }
 }

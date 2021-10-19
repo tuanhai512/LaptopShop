@@ -1,0 +1,14 @@
+﻿@model Management.ViewModel.Customer.CreateCustomerInput
+@{
+    @using (Html.BeginForm())
+    {
+        <p>Create</p>
+        <p>@Html.LabelFor(m => m.Name)</p>
+        <p>@Html.EditorFor(m => m.Name)</p>
+        <p>@Html.LabelFor(m => m.Email)</p>
+        <p>@Html.EditorFor(m => m.Email)</p>
+        <p>@Html.LabelFor(m => m.Password)</p>
+        <p>@Html.EditorFor(m => m.Password)</p>
+        <input type="submit" value="create" />
+    }
+}

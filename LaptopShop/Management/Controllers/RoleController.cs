@@ -51,7 +51,7 @@ namespace Management.Controllers
             model.Name = entity.Name;
             return View(model);
         }
-        [HttpPost]
+        [HttpPut]
         public IActionResult Edit (UpdateRoleInput model)
         {
             var entity = new Role();
@@ -63,6 +63,7 @@ namespace Management.Controllers
             this._context.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
             var entity = this._context.Roles.Find(id);

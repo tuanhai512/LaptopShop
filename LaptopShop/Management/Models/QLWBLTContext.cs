@@ -219,12 +219,12 @@ namespace Management.Models
                 entity.Property(e => e.UserId).HasColumnName("UserID");
 
                 entity.HasOne(d => d.Role)
-                    .WithMany(p => p.staff)
+                    .WithMany(p => p.Staff)
                     .HasForeignKey(d => d.RoleId)
                     .HasConstraintName("FK_Staff_Roles");
 
                 entity.HasOne(d => d.User)
-                    .WithMany(p => p.staff)
+                    .WithMany(p => p.Staff)
                     .HasForeignKey(d => d.UserId)
                     .HasConstraintName("FK_Staff_User");
             });
