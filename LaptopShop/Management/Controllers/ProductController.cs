@@ -80,15 +80,16 @@ namespace Management.Controllers
                     filename = filename + extent;
                     model.Image = "/Images/" + filename;
                     model.UploadImage.CopyTo(new FileStream(Path.Combine("wwwroot/Images", filename), FileMode.Create));
+                    model.UploadImage.CopyTo(new FileStream(Path.Combine("../User/wwwroot/Images", filename), FileMode.Create));
                 }
                 entity.Image = model.Image;
                 if (ModelState.IsValid )
                 {                  
                         entity.Id = model.Id;
                         entity.Name = model.Name;
-                        entity.Price = model.Price;
-                        entity.Quantity = model.Quantity;
-                        entity.Description = model.Description;
+                        entity.Price = model.Price.HasValue ? model.Price.Value : 0;
+                    entity.Quantity = model.Quantity.HasValue ? model.Quantity.Value : 0;
+                    entity.Description = model.Description;
                         entity.CategoryId = model.CategoryId;
                         _context.Add(entity);
                         _context.SaveChanges();
@@ -144,8 +145,8 @@ namespace Management.Controllers
             }
             entity.Id = model.Id;
             entity.Name = model.Name;
-            entity.Price = model.Price;
-            entity.Quantity = model.Quantity;
+            entity.Price = model.Price.HasValue ? model.Price.Value : 0;
+            entity.Quantity = model.Quantity.HasValue ? model.Price.Value : 0;
             entity.Description = model.Description;        
             entity.CategoryId = model.CategoryId;
             entity.Image = model.Image;
