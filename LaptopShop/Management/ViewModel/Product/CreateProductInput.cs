@@ -25,12 +25,12 @@ namespace Management.ViewModel.Product
         [Range(1, int.MaxValue,ErrorMessage = "Số lượng không được âm")]
         [Required(ErrorMessage = "Bạn chưa nhập số lượng")]
         [Display(Name="Số lượng")]
-        public int Quantity { get; set; }
+        public int? Quantity { get; set; }
 
         [Range(1, int.MaxValue, ErrorMessage ="Giá không được âm")]
         [Required(ErrorMessage ="Bạn chưa nhập giá")]
         [Display(Name = "Giá")]
-        public int Price { get; set; }
+        public int? Price { get; set; }
 
        
         [Required(ErrorMessage ="Bạn chưa nhập mô tả")]
