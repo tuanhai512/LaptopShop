@@ -24,7 +24,7 @@ namespace Management.ViewModel.Product
        
         [NotMapped]
         public IFormFile UploadImage { get; set; }
-
+        //hmmmmm
       
 
        
