@@ -28,6 +28,7 @@ namespace User
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<QLWBLTContext>(options => options.UseSqlServer(connection));
             services.AddControllersWithViews();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +48,7 @@ namespace User
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseSession();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

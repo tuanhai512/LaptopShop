@@ -7,6 +7,7 @@
 <div class="text-center">
     <h1 class="display-4">Welcome User</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <a href="@Url.ActionLink("Index","GioHang")">Xem Giỏ Hàng</a>
 </div>
 @if (Model.Count() > 0)
 {
@@ -34,7 +35,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Description)
                 </th>
-
+                <th></th>
             </tr>
             @foreach (var item in Model)
             {
@@ -60,7 +61,9 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Description)
                     </td>
-                  
+                  <td><a href="/GioHang/AddToCart/@item.Id" class="pest_btn " style=" margin-right: 5px;">
+    Thêm giỏ hàng
+</a></td>
                 </tr>
             }
         </table>
