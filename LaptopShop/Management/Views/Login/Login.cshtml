@@ -1,0 +1,20 @@
+﻿@model Management.ViewModel.User.UserDTO
+@{
+    @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken();
+        @Html.ValidationSummary(true);
+        <p>@Html.LabelFor(m => m.Email)</p>
+        <p>@Html.EditorFor(m => m.Email)</p>
+        <p>@Html.ValidationMessageFor(m => m.Email)</p>
+        <p>@Html.LabelFor(m => m.Password)</p>
+        <p>@Html.EditorFor(m => m.Password)</p>
+        <p>@Html.ValidationMessageFor(m => m.Password)</p>
+
+        if (ViewBag.Info != null)
+        {
+            <p>@ViewBag.Info</p>
+        }
+        <input type="submit" value="Đăng nhập" />
+     }
+}

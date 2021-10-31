@@ -2,37 +2,47 @@
 @{
     @using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
-<div class="form">
-    <div class="form-group">
-        @Html.LabelFor(m => m.Name)
-        @Html.EditorFor(m => m.Name)
-    </div>
-    <div class="form-group ">
-        @Html.LabelFor(m => m.Price)
-        @Html.EditorFor(m => m.Price)
-    </div>
-    <div class="form-group ">
-        @Html.LabelFor(m => m.Quantity)
-        @Html.EditorFor(m => m.Quantity)
-    </div>
-    <div class="form-group ">
-        @Html.LabelFor(m => m.Description)
-        @Html.EditorFor(m => m.Description)
-    </div>
-    <div class="form-group ">
-        @Html.LabelFor(m => m.CategoryName)
-        @Html.DropDownList("CategoryName", (IEnumerable<SelectListItem>)ViewBag.Categories, new { @class = "form -control" })
-    </div>
-    <p>@Html.HiddenFor(m => m.CategoryId)</p>
-    <div class="form-group ">
-        @Html.LabelFor(m => m.Image)
-        <input type="file" id="file" name="UploadImage" style="width:100%" />
-    </div>
-    <div>
-        <input type="submit" value="Create" />
-        <span class="btn btn-link">@Html.ActionLink("Back to List", "Index") </span>
-    </div>  
-</div>       
-       
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div class="form">
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name)
+                @Html.EditorFor(m => m.Name)
+                @Html.ValidationMessageFor(m => m.Name,"", new { @class = "text-danger" })
+            </div>
+            <div class="form-group ">
+                @Html.LabelFor(m => m.Price)
+                @Html.EditorFor(m => m.Price)
+                @Html.ValidationMessageFor(m => m.Price,"", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Quantity)
+                @Html.EditorFor(m => m.Quantity)
+                @Html.ValidationMessageFor(m => m.Quantity,"", new { @class = "text-danger" })
+            </div>
+            <div class="form-group ">
+                @Html.LabelFor(m => m.Description)
+                @Html.EditorFor(m => m.Description)
+                @Html.ValidationMessageFor(m => m.Description,"", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group ">
+                @Html.LabelFor(m => m.CategoryId)
+                @Html.DropDownList("CategoryId", (IEnumerable<SelectListItem>)ViewBag.Categories, "Chọn loại", new { @class = "form -control" })
+                @Html.ValidationMessageFor(m => m.CategoryId, "", new { @class = "text-danger" })
+            </div>
+
+
+            <div class="form-group ">
+                @Html.LabelFor(m => m.Image)
+                <input type="file" id="file" name="UploadImage" style="width:100%" />
+                @*@Html.ValidationMessageFor(m => m.Image, "", new { @class = "text-danger" })*@
+            </div>
+            <div>
+                <input type="submit" value="Create" />
+                <span class="btn btn-link">@Html.ActionLink("Back to List", "Index") </span>
+            </div>
+        </div>
+
     }
 }

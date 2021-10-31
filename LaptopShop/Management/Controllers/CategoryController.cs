@@ -43,6 +43,7 @@ namespace Management.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
+        
         public IActionResult Edit( int id )
         {
             var entity = this._context.Categories.Find(id);
@@ -51,7 +52,7 @@ namespace Management.Controllers
             model.Name = entity.Name;
             return View(model);
         }
-        [HttpPost]
+        [HttpPut]
         public IActionResult Edit( UpdateCategoryInput model)
         {
             var entity = new Category();
@@ -63,6 +64,7 @@ namespace Management.Controllers
             this._context.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
             var entity = this._context.Categories.Find(id);

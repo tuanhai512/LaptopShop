@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Management.ViewModel.Order.OrderDTO>
+@{
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6 text-danger text-uppercase">
+                    <strong>Danh sách đơn hàng</strong>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    if (Model.Count() > 0)
+    {
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="card-block p-3">
+                <table class="table table-bordered table-hover table-striped">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Id)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Total)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Status)
+                        </th>
+
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Total)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Status)
+                            </td>
+                            <td>
+                            
+
+                                @if (item.Status != 2)
+                                {
+                                    <span disabled />
+
+                                }
+                                else
+                                {
+                                    <a class="btn btn-info btn-sm">
+                                        @if (item.Status.Equals(2))
+                                        {
+                                            <span>Hoàn Tất Đơn</span>
+                                        }
+                                        else
+                                        {
+                                            <span> Đã Hoàn Tất Đơn </span>
+                                        }
+                                    </a>
+                                }                              
+                                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })
+
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Giỏ hàng trống</p>
+    }
+
+}
+

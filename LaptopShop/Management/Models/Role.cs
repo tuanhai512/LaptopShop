@@ -9,12 +9,12 @@ namespace Management.Models
     {
         public Role()
         {
-            Users = new HashSet<User>();
+            Staff = new HashSet<Staff>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<Staff> Staff { get; set; }
     }
 }

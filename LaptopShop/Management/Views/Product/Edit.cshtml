@@ -12,7 +12,7 @@
         <p>@Html.EditorFor(m => m.Description)</p>
 
         <div class="form-group">
-            <label>@Html.LabelFor(m => m.CategoryName)</label>
+            <label>@Html.LabelFor(m => m.CategoryId)</label>
             <p>
                 @Html.DropDownList("CategoryName", (IEnumerable<SelectListItem>)ViewBag.Categories, new { @class = "form -control" })
             </p>
