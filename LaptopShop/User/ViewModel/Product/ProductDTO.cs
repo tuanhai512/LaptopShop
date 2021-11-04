@@ -1,4 +1,4 @@
-﻿using Management.Models;
+﻿using Management.ViewModel.Product;
 using Management.ViewModel.Categories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Rendering;

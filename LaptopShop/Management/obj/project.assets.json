@@ -6118,24 +6118,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tuan Hai\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\navyc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+      "projectUniqueName": "D:\\HUFLIT\\MTK\\DoAn\\13-10\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
       "projectName": "Management",
-      "projectPath": "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
-      "packagesPath": "C:\\Users\\Tuan Hai\\.nuget\\packages\\",
-      "outputPath": "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\obj\\",
+      "projectPath": "D:\\HUFLIT\\MTK\\DoAn\\13-10\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+      "packagesPath": "C:\\Users\\navyc\\.nuget\\packages\\",
+      "outputPath": "D:\\HUFLIT\\MTK\\DoAn\\13-10\\LaptopShop\\LaptopShop\\Management\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Tuan Hai\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\navyc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6204,7 +6199,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
