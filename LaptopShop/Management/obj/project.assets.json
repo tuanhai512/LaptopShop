@@ -6118,23 +6118,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Tuan Hai\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+      "projectUniqueName": "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
       "projectName": "Management",
-      "projectPath": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\obj\\",
+      "projectPath": "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+      "packagesPath": "C:\\Users\\Tuan Hai\\.nuget\\packages\\",
+      "outputPath": "H:\\năm 4\\Website LaptopShop\\LaptopShop\\LaptopShop\\Management\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tuan Hai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
