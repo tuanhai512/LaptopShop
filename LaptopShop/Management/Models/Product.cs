@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Web;
-using System.ComponentModel;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Http;
 
 #nullable disable
 
@@ -11,11 +7,16 @@ namespace Management.Models
 {
     public partial class Product
     {
+        public Product()
+        {
+            ProductOrders = new HashSet<ProductOrder>();
+        }
+
         public int Id { get; set; }
         public string Name { get; set; }
         public int? CategoryId { get; set; }
-        public int? Quantity { get; set; }
-        public double? Price { get; set; }
+        public int Quantity { get; set; }
+        public int Price { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
         public string CategoryName { get; set; }
@@ -25,8 +26,6 @@ namespace Management.Models
         public DateTime? UpdateAt { get; set; }
 
         public virtual Category Category { get; set; }
-
-        [NotMapped]
-        public IFormFile UploadImage { get; set; }
+        public virtual ICollection<ProductOrder> ProductOrders { get; set; }
     }
 }
