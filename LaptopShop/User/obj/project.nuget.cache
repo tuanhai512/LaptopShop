@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C8lpgiGAVv53zNGTj4Q+NvQHSyAs3SmccqMpyRq5PvAD9pg4ZVAbwPV/3FG9Mkdth6Ko/3x6Dl+d2dFkHFDqNA==",
+  "dgSpecHash": "ArFcFBf1JLIRLr1uT1cqO/TyH14nSoEm1Qx8eYnKGpPFq49VaOv1VhaedU/0VownL+y8TBccVxuKkIwt+Msy3g==",
   "success": true,
-  "projectFilePath": "D:\\Github\\LaptopShop\\LaptopShop\\User\\User.csproj",
+  "projectFilePath": "D:\\Github\\LaptopShopH\\LaptopShop\\User\\User.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\LaptopShop\\LaptopShop\\Management\\Management.csproj": {}
+    "D:\\Github\\LaptopShopH\\LaptopShop\\Management\\Management.csproj": {}
   },
   "projects": {
-    "D:\\Github\\LaptopShop\\LaptopShop\\Management\\Management.csproj": {
+    "D:\\Github\\LaptopShopH\\LaptopShop\\Management\\Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+        "projectUniqueName": "D:\\Github\\LaptopShopH\\LaptopShop\\Management\\Management.csproj",
         "projectName": "Management",
-        "projectPath": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+        "projectPath": "D:\\Github\\LaptopShopH\\LaptopShop\\Management\\Management.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\obj\\",
+        "outputPath": "D:\\Github\\LaptopShopH\\LaptopShop\\Management\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
