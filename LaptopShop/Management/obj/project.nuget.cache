@@ -1,8 +1,10 @@
 {
   "version": 2,
   "dgSpecHash": "7qNEbGTBgz+8QOgfbvGRuFC8MAaFEQl4QvPNAH7x1J3W70LeVe62d8C/S3yK1SwTSz45t+PRRVZQ6SSB5blv9Q==",
+  "dgSpecHash": "W2ZVusl4dA334vs44UptZZR3snR3MlPfpoenkreYq49GvMd1Ir/3+6cTuYzC+bZ9N2x1x7WoZuQZbPszA4YnIg==",
   "success": true,
   "projectFilePath": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+  "projectFilePath": "D:\\Github\\LaptopShopH\\LaptopShop\\Management\\Management.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
