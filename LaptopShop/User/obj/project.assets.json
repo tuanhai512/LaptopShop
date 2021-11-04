@@ -5804,13 +5804,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\LaptopShop\\LaptopShop\\User\\User.csproj",
       "projectUniqueName": "D:\\Github\\LaptopShopH\\LaptopShop\\User\\User.csproj",
       "projectName": "User",
-      "projectPath": "D:\\Github\\LaptopShop\\LaptopShop\\User\\User.csproj",
       "projectPath": "D:\\Github\\LaptopShopH\\LaptopShop\\User\\User.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\LaptopShop\\LaptopShop\\User\\obj\\",
       "outputPath": "D:\\Github\\LaptopShopH\\LaptopShop\\User\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
