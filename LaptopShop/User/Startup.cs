@@ -27,7 +27,8 @@ namespace User
         {
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<QLWBLTContext>(options => options.UseSqlServer(connection));
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(); 
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +50,8 @@ namespace User
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseSession();
+
 
             app.UseEndpoints(endpoints =>
             {

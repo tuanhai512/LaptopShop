@@ -139,8 +139,10 @@ namespace Management.Controllers
                 string filename = Path.GetFileNameWithoutExtension(model.UploadImage.FileName);
                 string extent = Path.GetExtension(model.UploadImage.FileName);
                 filename = filename + extent;
-                model.Image = "Assets/Image" + filename;
-                model.UploadImage.CopyTo(new FileStream(Path.Combine("Assets/Images", filename), FileMode.Create));
+                model.Image = "/Images/" + filename;
+
+                model.UploadImage.CopyTo(new FileStream(Path.Combine("wwwroot/Images", filename), FileMode.Create));
+                model.UploadImage.CopyTo(new FileStream(Path.Combine("../User/wwwroot/Images", filename), FileMode.Create));
 
             }
             entity.Id = model.Id;
