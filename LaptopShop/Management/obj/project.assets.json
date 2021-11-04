@@ -6118,23 +6118,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\navyc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+      "projectUniqueName": "D:\\HUFLIT\\MTK\\DoAn\\13-10\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
       "projectName": "Management",
-      "projectPath": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\LaptopShop\\LaptopShop\\Management\\obj\\",
+      "projectPath": "D:\\HUFLIT\\MTK\\DoAn\\13-10\\LaptopShop\\LaptopShop\\Management\\Management.csproj",
+      "packagesPath": "C:\\Users\\navyc\\.nuget\\packages\\",
+      "outputPath": "D:\\HUFLIT\\MTK\\DoAn\\13-10\\LaptopShop\\LaptopShop\\Management\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\navyc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6203,7 +6199,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

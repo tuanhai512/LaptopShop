@@ -1,48 +1,52 @@
 ﻿@model Management.ViewModel.Product.CreateProductInput
 @{
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Create Product</h1>
+    </div>
+
     @using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         @Html.AntiForgeryToken()
         @Html.ValidationSummary(true)
-        <div class="form">
-            <div class="form-group">
-                @Html.LabelFor(m => m.Name)
-                @Html.EditorFor(m => m.Name)
-                @Html.ValidationMessageFor(m => m.Name,"", new { @class = "text-danger" })
-            </div>
-            <div class="form-group ">
-                @Html.LabelFor(m => m.Price)
-                @Html.EditorFor(m => m.Price)
-                @Html.ValidationMessageFor(m => m.Price,"", new { @class = "text-danger" })
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Quantity)
-                @Html.EditorFor(m => m.Quantity)
-                @Html.ValidationMessageFor(m => m.Quantity,"", new { @class = "text-danger" })
-            </div>
-            <div class="form-group ">
-                @Html.LabelFor(m => m.Description)
-                @Html.EditorFor(m => m.Description)
-                @Html.ValidationMessageFor(m => m.Description,"", new { @class = "text-danger" })
-            </div>
 
-            <div class="form-group ">
-                @Html.LabelFor(m => m.CategoryId)
-                @Html.DropDownList("CategoryId", (IEnumerable<SelectListItem>)ViewBag.Categories, "Chọn loại", new { @class = "form -control" })
-                @Html.ValidationMessageFor(m => m.CategoryId, "", new { @class = "text-danger" })
-            </div>
+        <div class="text-center-box">
+            <div class="paddingtop rl" style="padding-bottom: 20px;">
+                <div class="form">
+                    <link href="~/form/css/StyleSheet.css" rel="stylesheet" />
+                    <div class="form-group">
+                        @Html.EditorFor(m => m.Name , new { htmlAttributes = new { placeholder = "Tên Sản Phẩm"} })
+                        @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group ">
+                        @Html.EditorFor(m => m.Price, new { htmlAttributes = new { placeholder = "Giá" } })
+                        @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.EditorFor(m => m.Quantity, new { htmlAttributes  = new { placeholder = "Số Lượng" } })
+                        @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group ">
+                        @Html.EditorFor(m => m.Description, new { htmlAttributes = new { placeholder = "Nội Dung" } })
+                        @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group " >
+                        @Html.DropDownList("CategoryId", (IEnumerable<SelectListItem>)ViewBag.Categories, "Chọn loại", new { @id= "adad" })
+                        @Html.ValidationMessageFor(m => m.CategoryId, "", new { @class = "text-danger" })
+                    </div>
 
 
-            <div class="form-group ">
-                @Html.LabelFor(m => m.Image)
-                <input type="file" id="file" name="UploadImage" style="width:100%" />
-                @*@Html.ValidationMessageFor(m => m.Image, "", new { @class = "text-danger" })*@
-            </div>
-            <div>
-                <input type="submit" value="Create" />
-                <span class="btn btn-link">@Html.ActionLink("Back to List", "Index") </span>
+                    <div class="form-group ">
+                        <input type="file" id="file" />
+                        <label for="file" class="btn-2">Upload Hình Ảnh</label>
+                    </div>
+                    <div>
+                        <input class="btn btn-success" type="submit" value="Create" />
+                        <span class="btn btn-link">@Html.ActionLink("Quay về", "Index") </span>
+                    </div>
+                </div>
             </div>
         </div>
-
     }
 }

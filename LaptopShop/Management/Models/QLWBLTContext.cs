@@ -32,7 +32,7 @@ namespace Management.Models
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-C3NHQRN\\SQLEXPRESS;Database=QLWBLT;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("SERVER=LOCALHOST;Database=QLWBLT;Trusted_Connection=True;");
             }
         }
 
