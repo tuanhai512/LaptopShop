@@ -1,1 +1,3 @@
-﻿<StaticWebAssets Version="1.0" />
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Management" Path="H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\wwwroot\" />
+</StaticWebAssets>

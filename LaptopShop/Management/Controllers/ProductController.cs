@@ -157,7 +157,8 @@ namespace Management.Controllers
             this._context.SaveChanges();
             return RedirectToAction("Index");
         }
-        [HttpDelete]
+
+       [HttpDelete]
         public IActionResult Delete(int id)
         {
             var entity = this._context.Products.Find(id);
@@ -165,6 +166,7 @@ namespace Management.Controllers
             this._context.SaveChanges();
             return RedirectToAction("Index");
         }
+
         public IActionResult Detail( DetailProductDTO model , int id)
         {
             var query = from c in _context.Products

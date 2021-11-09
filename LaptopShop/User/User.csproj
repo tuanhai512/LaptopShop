@@ -15,6 +15,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="SpecFlow" Version="3.9.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Management\Management.csproj" />
   </ItemGroup>
 
 </Project>

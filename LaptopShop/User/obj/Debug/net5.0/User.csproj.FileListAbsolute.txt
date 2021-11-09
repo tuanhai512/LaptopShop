@@ -214,3 +214,33 @@ D:\Github\LaptopShop\LaptopShop\User\obj\Debug\net5.0\User.dll
 D:\Github\LaptopShop\LaptopShop\User\obj\Debug\net5.0\ref\User.dll
 D:\Github\LaptopShop\LaptopShop\User\obj\Debug\net5.0\User.pdb
 D:\Github\LaptopShop\LaptopShop\User\obj\Debug\net5.0\User.genruntimeconfig.cache
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\obj\Debug\net5.0\User.csprojAssemblyReference.cache
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\obj\Debug\net5.0\Razor\Views\GioHang\Index.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\obj\Debug\net5.0\User.MvcApplicationPartsAssemblyInfo.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\obj\Debug\net5.0\Razor\Views\GioHang\Index1.cshtml.g.cs
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Management.Views.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Management.Views.pdb
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Management.deps.json
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Management.runtimeconfig.json
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Management.runtimeconfig.dev.json
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Management.exe
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\User.StaticWebAssets.xml
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\BoDi.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Cucumber.Messages.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\EntityFramework.SqlServer.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\EntityFramework.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Gherkin.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Google.Protobuf.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\TechTalk.SpecFlow.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\SpecFlow.Internal.Json.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\System.CodeDom.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\System.Data.SqlClient.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Management.dll
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\User\bin\Debug\net5.0\Management.pdb

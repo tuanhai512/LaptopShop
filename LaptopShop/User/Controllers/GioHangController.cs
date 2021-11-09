@@ -8,6 +8,7 @@ using User.Helpers;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using static User.Models.CartItem;
+using TechTalk.SpecFlow.CommonModels;
 
 namespace User.Controllers
 {
@@ -33,36 +34,84 @@ namespace User.Controllers
                 return data;
             }
         }
+        public List<CartItemVM> CartsVM
+        {
+            get
+            {
+                var data = HttpContext.Session.Get<List<CartItemVM>>("GioHang");
+                if (data == null)
+                {
+                    data = new List<CartItemVM>();
+                }
+                return data;
+            }
+        }
         public IActionResult Index()
         {
             ViewBag.total = Carts.Sum(item => item.Price * item.Soluong);
             ViewBag.totalQty = Carts.Sum(item => item.Soluong);
-
             return View(Carts);
         }
-        public IActionResult AddToCart(int id, int soluong = 1)
+        public IActionResult Index2()
+        {                      
+            return View(CartsVM);
+        }
+        public IActionResult AddToCart(int id, int ?amount)
         {
-            var myCart = Carts;
-            var item = myCart.SingleOrDefault(p => p.Masp == id);
-            if (item == null)
+            //var myCart = Carts;
+            //var item = myCart.SingleOrDefault(p => p.Masp == id);
+            //if (item == null)
+            //{
+            //    var sanpham = _context.Products.SingleOrDefault(p => p.Id == id);
+            //    item = new CartItem
+            //    {
+            //        Masp = id,
+            //        Tensp = sanpham.Name,
+            //        Price = sanpham.Price,
+            //        Hinhanh = sanpham.Image,
+            //        Soluong = soluong,
+            //    };
+            //    myCart.Add(item);
+            //}
+            //else
+            //{
+            //    item.Soluong += soluong;
+            //}
+            //HttpContext.Session.Set("GioHang", myCart);
+            //return RedirectToAction("Index", "Home");
+            try
             {
-                var sanpham = _context.Products.SingleOrDefault(p => p.Id == id);
-                item = new CartItem
+                List<CartItemVM> giohang = CartsVM;
+                CartItemVM item = CartsVM.SingleOrDefault(p => p.product.Id == id);
+                if (item != null)
                 {
-                    Masp = id,
-                    Tensp = sanpham.Name,
-                    Price = sanpham.Price,
-                    Hinhanh = sanpham.Image,
-                    Soluong = soluong,
-                };
-                myCart.Add(item);
+                    if (amount.HasValue)
+                    {
+                        item.amount = amount.Value;
+                    }
+                    else
+                        amount++;
+                }
+                else
+                {
+                    Product db = _context.Products.SingleOrDefault(p => p.Id == id);
+                    item = new CartItemVM
+                    {
+                        amount = amount.HasValue ? amount.Value : 1,
+                        product = db
+                    };
+                    giohang.Add(item);
+
+                }
+                HttpContext.Session.Set("GioHang", giohang);
+                return Json(new { success = true });
             }
-            else
+            catch
             {
-                item.Soluong += soluong;
+                return Json(new { success = false });
             }
-            HttpContext.Session.Set("GioHang", myCart);
-            return RedirectToAction("Index", "Home");
+           
+
         }
         public IActionResult UpdateCart(int id, int quantity)
         {

@@ -52,6 +52,7 @@ namespace User
             app.UseAuthorization();
             app.UseSession();
 
+         
 
             app.UseEndpoints(endpoints =>
             {

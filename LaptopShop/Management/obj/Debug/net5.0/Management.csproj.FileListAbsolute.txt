@@ -218,8 +218,6 @@ H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\R
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Category\Detail.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
-H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Role\Create.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Role\Detail.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Role\Edit.cshtml.g.cs
@@ -261,7 +259,6 @@ H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\R
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Order\Complete.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Order\Cancel.cshtml.g.cs
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Order\Confirm.cshtml.g.cs
-H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Management.csprojAssemblyReference.cache
 H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Razor\Views\Customer\Hide.cshtml.g.cs
 D:\Github\laptop\LaptopShop\LaptopShop\Management\bin\Debug\net5.0\appsettings.Development.json
 D:\Github\laptop\LaptopShop\LaptopShop\Management\bin\Debug\net5.0\appsettings.json
@@ -368,3 +365,4 @@ D:\Github\laptop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Management.dl
 D:\Github\laptop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\ref\Management.dll
 D:\Github\laptop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Management.pdb
 D:\Github\laptop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Management.genruntimeconfig.cache
+H:\năm 4\Website LaptopShop\LaptopShop\LaptopShop\Management\obj\Debug\net5.0\Management.csproj.AssemblyReference.cache

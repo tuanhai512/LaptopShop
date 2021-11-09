@@ -17,15 +17,13 @@ namespace Management.Controllers
         public CategoryController( QLWBLTContext context)
         {
             this._context = context;
+            CategorySingleton.Instance.Init(context);
+          
         }
         public IActionResult Index()
         {
-            var query = from c in _context.Categories
-                        select new CategoryDTO
-                        { 
-                            ID = c.Id,
-                            Name = c.Name 
-                        };
+            
+            var query = CategorySingleton.Instance.listCategory;
             return View(query.ToList());
         }
         public IActionResult Create()
@@ -40,7 +38,10 @@ namespace Management.Controllers
                 entity = new Category();
             entity.Name = model.Name;
             _context.Add(entity);
-            _context.SaveChanges();
+            _context.SaveChanges();         
+            CategorySingleton.Instance.listCategory.Clear();
+            CategorySingleton.Instance.Init(_context);
+           // var category = CategorySingleton.Instance.listCategory;
             return RedirectToAction("Index");
         }
         
@@ -64,12 +65,14 @@ namespace Management.Controllers
             this._context.SaveChanges();
             return RedirectToAction("Index");
         }
-        [HttpDelete]
+  
         public IActionResult Delete(int id)
         {
-            var entity = this._context.Categories.Find(id);
-            this._context.Categories.Remove(entity);
+            var entity = this._context.Categories.Find(id);           
+            this._context.Categories.Remove(entity);     
             this._context.SaveChanges();
+            CategorySingleton.Instance.listCategory.Clear();
+            CategorySingleton.Instance.Init(_context);
             return RedirectToAction("Index");
         }
         public IActionResult Detail(int id)
@@ -81,7 +84,7 @@ namespace Management.Controllers
                             ID = c.Id,
                             Name = c.Name
                         };
-            
+
             return View(query.First());   
         }
        
